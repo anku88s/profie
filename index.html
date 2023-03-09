@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slideshow {
+            width:70%;
+            overflow: hidden;
+          }
+          
+          .slideshow img {
+            width: 50%;
+            display: none;
+          }
+          
+          .slideshow img:first-child {
+            display: block;
+          }
+          
+          /* Set the animation */
+          @keyframes slide {
+            0% { 
+                transform: translateX(0);
+             }
+            100% { transform: translateX(-90%); }
+          }
+          
+          /* Apply the animation to the images */
+          .slideshow img {
+            animation: slide 3s ease infinite;
+          }
+          
+    </style>
+</head>
+<body>
+    <div class="slideshow">
+        <img src="home.png" alt="Image 1">
+        <img src="home.png" alt="Image 2">
+        <img src="home.png" alt="Image 3">
+      </div>
+      
+</body>
+</html>
